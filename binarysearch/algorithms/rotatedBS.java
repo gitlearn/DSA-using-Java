@@ -31,10 +31,12 @@ public class Main
 {
 	public static void main(String[] args) {
 		int [] arr = { 4, 5, 6, 2, 3};
-		System.out.println(rotatedBS(arr, 0, arr.length - 1, 3));
+		System.out.println(rotatedBS(arr, 3));
 	}
-	public static int rotatedBS(int [] arr, int s, int e, int target){
+	public static int rotatedBS(int [] arr, int target){
 	    int m = -1;
+            int s = 0;
+            int e = arr.length - 1;
 	    while(s <= e){
 	        m = s + (e - s)/2;
 	        if(arr[m] == target) return m;

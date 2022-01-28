@@ -1,4 +1,3 @@
-// taking end as arr.length
 public class Main
 {
 	public static void main(String[] args) {
@@ -45,6 +44,3 @@ public class Main
 	    }
 	}
 }
-
-
-//taking end as arr.length - 1

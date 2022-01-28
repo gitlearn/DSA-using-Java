@@ -1,4 +1,6 @@
-// taking end as arr.length
+//THIS HAS TWO VERSIONS TO LEARN WHAT ALL CHANGES SHOULD WE MAKE TO PREVENT MISTAKES WHILE CHOOSING END
+
+// Taking end as arr.length
 public class Main
 {
 	public static void main(String[] args) {
@@ -47,7 +49,7 @@ public class Main
 }
 
 
-//taking end as arr.length - 1
+// Taking end as arr.length - 1
 public class Main
 {
 	public static void main(String[] args) {

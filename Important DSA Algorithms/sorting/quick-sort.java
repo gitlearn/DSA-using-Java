@@ -67,9 +67,6 @@ public class Main
 	    int temp = arr[s];
 	    arr[s] = arr[high];
 	    arr[high] = temp;
-	    for(int c : arr){
-	        System.out.print(c);
-	    }
 	    System.out.println();
 	    quickSort(arr, low, e - 1);
 	    quickSort(arr, s + 1, high);

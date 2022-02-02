@@ -47,7 +47,6 @@ public class Main
 	    if(low >= high) return;
 	    int s = low;
 	    int e = high - 1;
-	    int m = s + (e- s)/2;
 	    int pivot = arr[high];
 	    while(s <= e){
 	        while(arr[s] < pivot){

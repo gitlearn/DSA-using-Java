@@ -60,3 +60,35 @@ public class Main
 	    return -1;
    }
 }
+
+//Iterative
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int [] arr = {3, 3, 4, 5, 1, 2};
+		System.out.println("Enter the element to be searched");
+		Scanner sc = new Scanner(System.in);
+		int target = sc.nextInt();
+		System.out.println();
+		rotatedBS(arr, target);
+	}
+	public static void rotatedBS(int [] arr, int target){
+	    int s = 0; 
+	    int e = arr.length - 1;
+	    int m = -1;
+	    while(s <= e){
+	        m = s + (e - s)/2;
+	        if(arr[m] == target) {
+	            System.out.println(target + " is in index " +m);
+	            return;
+	        }
+	        else if(arr[s] <= arr[m]){
+	            if(target >= arr[s] && target < arr[m]) e = m - 1;
+	            else s = m + 1;
+	        }else if(arr[e] >= arr[m] && target > arr[m] && target <= arr[e]) s = m + 1;
+	        else e = m - 1;
+	    }
+	    System.out.println("Element not found");
+	}
+}

@@ -27,10 +27,3 @@ public class Main
 	}
 }
 
-/*
-Thought process.
-* Let us consider sorted array as a vector like structure. (----->).
-* Look at the form of the answer = ------>-->. Which before rotation was of the form -->------>.
-* Now to the steps, if we reverse the first and second sorted sections seperately it gives <--<------.
-* Now if we reverse this we will get the desired answer ------>-->. 
-*/

@@ -15,8 +15,12 @@ class Pam {
 
 ```
 After compiling the file, two class files will be formed Sam.class and Pam.class.
-```javac Sam.java```
+```
+javac Sam.java
+```
 We should run the file by the class that has the main method.
-```java Sam```
+```
+java Sam
+```
 
 The two classes can be of default assessibility and the name of the file can be anything but conventional. 

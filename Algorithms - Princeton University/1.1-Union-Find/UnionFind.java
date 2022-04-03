@@ -35,6 +35,25 @@ class QuickUnionUF{
         int j = root(b);
         id[i] = j;
     }
+    /*
+    Improving Quick Union.
+    1) Weighted Quick Union.
+    wt[] is the weight array
+    if(wt[i] < wt[j]){
+        id[root(i)] = root(j);
+        wt[j]+=wt[i];
+    }else{
+        id[root(j)] = root(i);
+        wt[i]+=wt[j];
+    }
+
+    2) Path Compresser.
+    while(i != id[i]){
+        id[i] = id[id[i]];
+        i = id[i];
+    }
+    return i;
+    */
 }
 public class UnionFind{
     public static void main(String[] args) {

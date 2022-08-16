@@ -1,3 +1,4 @@
+//Implementation using linked list
 class Stack{
     Node head = null;
     int size = 0;
@@ -42,7 +43,7 @@ public class Main
 }
 
 
-//Another implementation
+//Another better but similar implementation using linked list
 class Stack{
     private int size = 0;
     private Node head = null;
@@ -89,3 +90,5 @@ public class Main
 		s.pop();
 	}
 }
+
+//Implementation using Arrays

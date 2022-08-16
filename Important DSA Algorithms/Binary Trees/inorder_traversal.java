@@ -72,8 +72,7 @@ public class Main
 	                root = s.pop();
 	            }
 	            System.out.print(root.value + " ");
-	            if(root.right != null) root = root.right;
-	            else root = null;
+	            root = root.right;
 	    }
 	}
 }
